@@ -1,0 +1,122 @@
+.about-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+.about-text{
+    flex: 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 5%;
+    
+}
+.about-skills{
+    flex: 50%;
+    max-width: 50%;
+    padding: 5%;
+    
+
+}
+.resume{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.resume:hover{
+    text-shadow: 1px 1px 5px #cccccc;
+}
+.about-skill-item{
+    position: relative;
+    height:40px;
+    margin-bottom: 5%;
+    background-color: rgba(100, 148, 237, 0.267);
+    border-radius: 10rem;
+    box-shadow: 1px 1px 3px cornflowerblue;
+    
+}
+.about-skill-item::before{
+    position: absolute;
+    top:0.4rem;
+    left: 0.5rem;
+    content: attr(data-label);
+    background: linear-gradient(120deg,cornflowerblue,rgb(144, 173, 226));
+    border-radius: 10rem;
+    padding: 0.2rem;  
+}
+.ht::after{
+    position: absolute;
+    top:0.5rem;
+    right: -2.3rem;
+    content: '90%';
+}
+.cs::after{
+    position: absolute;
+    top:0.5rem;
+    right: -2.3rem;
+    content: '80%';
+}
+
+.jv::after{
+    position: absolute;
+    top:0.5rem;
+    right: -2.3rem;
+    content: '60%';
+}
+
+.rct::after{
+    position: absolute;
+    top:0.5rem;
+    right: -2.3rem;
+    content: '60%';
+}
+
+.pt::after{
+    position: absolute;
+    top:0.5rem;
+    right: -2.3rem;
+    content: '60%';
+}
+
+
+.ht::before{
+    width: 90%;
+}
+.cs::before{
+    width: 80%;
+}
+.jv::before{
+    width: 80%;
+}
+.rct::before{
+    width: 70%;
+}
+.pt::before{
+    width: 60%;
+}
+
+
+@media screen and (max-width:768px){
+    .about-info-container{
+        margin: 15%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .about-text{
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+    .about-skills{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .about-skills{
+        margin: 10%;
+    }
+
+}

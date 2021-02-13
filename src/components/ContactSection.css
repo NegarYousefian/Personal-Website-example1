@@ -1,0 +1,28 @@
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    font-size: 1.5rem;
+}
+.contact-link{
+    width: 30%;
+    transition: all 0.8s ease;
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 1%;
+}
+.contact-link:hover{
+    opacity: 1;
+    margin-left: 3%;
+    color: rgb(44, 64, 102);
+}
+
+
+@media screen and (max-width:768px){
+    .contact-link{
+        width: 100%;
+    }
+}
+
+
+
